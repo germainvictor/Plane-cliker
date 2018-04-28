@@ -1,0 +1,353 @@
+body
+{
+	background:#eee;
+	font-family:Helvetica,Arial;
+	font-size:14px;
+	overflow: hidden;
+}
+
+.homeContainer{
+	width: 100%;
+}
+
+.homeContainer img{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+
+/********* ANIMATION 1 : big plane  ***************/
+.animationZone1{
+	position: absolute;
+	top:55%;
+	left: 0%;
+	transform-origin: center;
+	animation-name: animationPlane1;
+	animation-duration: 7s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+.animationZone1 img{
+	width: 450px;
+}
+
+@keyframes animationPlane1{
+	20%{transform: translateX(300px);}
+	50%{transform: translate(500, -500px) rotate(-25deg);}
+	100%{transform: translate(2000px, -800px) rotate(-25deg);}
+}
+
+/************ ANIMATION 2 : yellow plane ***************/
+
+.animationZone2{
+	position: absolute;
+	top:10%;
+	right: 0%;
+	animation-name: animationPlane2;
+	animation-duration: 20s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+.animationZone2 img{
+	width: 100px;
+}
+
+@keyframes animationPlane2{
+	100%{transform: translateX(-3000px);}
+}
+
+
+
+/*********** button entrer ********/
+
+
+.buttonEnter{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+
+	width: 350px;
+	height: 90px;
+	transform: translateX(-175px);
+	/*margin: 25px;*/
+	background-color: rgba(255 , 255, 255, 0.6);
+	border: solid 2px white;
+	text-align: center;
+}
+
+.buttonEnter a{
+	text-decoration: none;	
+	text-transform: uppercase;
+	color: #f57c00;
+	font-size: 40px;
+}
+
+.buttonEnter:hover{
+	background-color: rgba(255 , 125, 26, 0.8);
+	color: white;
+}
+
+.buttonEnter:hover a{
+	color: white;
+}
+
+.buttonEnter p{
+	margin: 10px auto;
+}
+
+
+.homeResponsive{
+	display: none;
+}
+
+
+/*************************************************
+RESPONSIVE  
+***********************************************/
+
+
+
+@media (min-width:300px) and (max-width:1140px){
+	.homeContainer{
+		display: none;
+	}
+
+	.homeResponsive{
+		display: block;
+		position:absolute;
+		top: 0px;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background-color: #b2ebf2;
+	}
+
+	.homeResponsive .cloud{
+		display: inline-block;
+		width: 100px;
+		opacity: 0.5;
+	}
+
+
+
+	/*********** cloud positionning *********/
+
+
+	.homeResponsive .cloud2{
+		width: 200px;
+	}
+
+	.homeResponsive .index-1{
+		position: absolute;
+		top: 40px;
+		left: 50px;
+	}
+
+	.homeResponsive .index-1{
+		position: absolute;
+		top: 40px;
+		left: 50px;
+	}
+
+	.homeResponsive .index-2{
+		position: absolute;
+		top: 550px;
+		left: 100px;
+	}
+
+	.homeResponsive .index-3{
+		position: absolute;
+		top: 100px;
+		left: 300px;
+	}
+
+	.homeResponsive .index-4{
+		position: absolute;
+		top: 300px;
+		left: 20px;
+	}
+
+	.homeResponsive .index-5{
+		position: absolute;
+		top: 210px;
+		left: 50px;
+	}
+
+	.homeResponsive .index-6{
+		position: absolute;
+		top: 400px;
+		left: 80px;
+	}
+
+	.homeResponsive .index-7{
+		position: absolute;
+		top: 420px;
+		left: 300px;
+	}
+
+
+	.homeResponsive .index-8{
+		position: absolute;
+		top: 230px;
+		left: 800px;
+	}
+
+	.homeResponsive .index-9{
+		position: absolute;
+		top: 400px;
+		left: 650px;
+	}
+
+	.homeResponsive .index-10{
+		position: absolute;
+		top: 700px;
+		left: 680px;
+	}
+
+	.homeResponsive .index-11{
+		position: absolute;
+		bottom: 100px;
+		right: 300px;
+	}
+
+	.homeResponsive .index-12{
+		position: absolute;
+		top: 800px;
+		left: 1200px;
+	}
+
+	.homeResponsive .index-13{
+		position: absolute;
+		top: 685px;
+		left: 1100px;
+	}
+
+	.homeResponsive .index-14{
+		position: absolute;
+		top: 560px;
+		left: 890px;
+	}
+
+	.homeResponsive .index-15{
+		position: absolute;
+		top: 750px;
+		left: 1250px;
+	}
+
+/******** animation cloud ***************/
+
+
+	.homeResponsive .anim1{
+		animation-name: cloudMoveHome1;
+		animation-duration: 25s;
+		animation-delay: 1s;
+		animation-direction: normal;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease;
+	}
+
+	@keyframes cloudMoveHome1{
+		50%{transform: translateX(-600px);}
+		100%{transform: translateX(1500);}
+	}
+
+	.homeResponsive .anim2{
+		animation-name: cloudMoveHome2;
+		animation-duration: 20s;
+		animation-delay: 2s;
+		animation-direction: normal;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease;
+	}
+
+	@keyframes cloudMoveHome2{
+		50%{transform: translateX(1000px);}
+		100%{transform: translateX(-200);}
+	}
+
+
+
+	/***** button entrer *******/
+
+
+	.buttonEnter{
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		width: 300px;
+		height: 90px;
+		transform: translateX(-150px);
+		/*margin: 25px;*/
+		background-color: rgba(255 , 255, 255, 0.6);
+		border: solid 2px white;
+		text-align: center;
+	}
+
+
+	/****** plane green animation *********/
+
+	.plane3ResponsiveHome{
+		position: absolute;
+		bottom: 0px;
+		left: 100px;
+		animation-name: planeMoveHome3;
+		animation-duration: 20s;
+		animation-delay: 1s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes planeMoveHome3{
+		20%{transform: translateY(-200px);}
+		60%{transform: translate(-300px, -800px);}
+		100%{transform: translate(-600px);}
+	}
+
+	.plane4ResponsiveHome{
+		position: absolute;
+		bottom: -100px;
+		left: 600px;
+		animation-name: planeMoveHome4;
+		animation-duration: 20s;
+		animation-delay: 3s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes planeMoveHome4{
+		20%{transform: translateY(-200px);}
+		60%{transform: translate(100px, -800px);}
+		100%{transform: translate(-600px);}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************/
+
+
+
+

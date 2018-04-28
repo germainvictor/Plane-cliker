@@ -1,0 +1,718 @@
+body {
+	background:#eee;
+	font-family: 'Varela Round', sans-serif;
+	font-size:14px;
+	overflow: hidden;
+}
+
+/******** ZONE GAME LEFT ****************/
+
+.zoneGame{
+	position: absolute;
+	top: 0px;
+	left: 0px;	
+	width: 75%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #b2ebf2;
+}
+
+.zoneRight{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 25%;
+	height: 100%;
+	background-color: #303030;
+	display: inline-block;	
+}
+
+.counter {
+	width: 320px;
+    height: 156px;
+    padding: 20px;
+    position: relative;
+    top: 25%;
+    left: 0;
+    transform: translateY(-75con%);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+
+.title-argent {
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	transform: translateX(-50%);
+	font-size: 15px;
+	color: #fcfcfc;
+	
+}
+
+.money {
+	position: absolute;
+	top: 45px;
+	transform: translateX(-50%);
+	left: 50%;
+	font-size: 25px;
+	color: #ffc107;
+}
+
+.title-valuation {
+	position: absolute;
+	left: 50%;
+	top: 90px;
+	transform: translateX(-50%);
+	font-size: 15px;
+	color: #fcfcfc;
+}
+
+
+.valuation {
+	position: absolute;
+	top: 116px;
+	transform: translateX(-50%);
+	left: 50%;
+	font-size: 25px;
+	color: #f44336;
+}
+
+.ticket {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.ticket img{
+	width: 300px;
+	transform: translateX(-150px);
+}
+
+
+.buttonBack{
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+}
+
+.buttonBack a img{
+	width: 35px;
+	opacity: 0.7;
+}
+
+/****** ANIMATION ZONE  **********************/
+
+.animationZone{
+	position: absolute;
+	top: 0px;
+	left: 0px;	
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+
+/* clouds */
+
+.animationZone .cloud2{
+	width: 150px;
+	opacity: 0.4;
+}
+
+.animationZone .cloud{
+	width: 200px;
+	opacity: 0.7;
+}
+
+.animationZone .index-1{
+	position: absolute;
+	top: 40px;
+	left: 20px;
+}
+
+.animationZone .index-1{
+	position: absolute;
+	top: 60px;
+	left: 50px;
+}
+
+.animationZone .index-2{
+	position: absolute;
+	top: 550px;
+	left: 100px;
+}
+
+.animationZone .index-3{
+	position: absolute;
+	top: 100px;
+	left: 300px;
+}
+
+.animationZone .index-4{
+	position: absolute;
+	top: 300px;
+	left: 90px;
+}
+
+.animationZone .index-5{
+	position: absolute;
+	top: 210px;
+	left: 50px;
+}
+
+.animationZone .index-6{
+	position: absolute;
+	top: 400px;
+	left: 80px;
+}
+
+.animationZone.index-7{
+	position: absolute;
+	top: 420px;
+	left: 300px;
+}
+
+.animationZone .index-8{
+	position: absolute;
+	top: 230px;
+	left: 800px;
+}
+
+.animationZone .index-9{
+	position: absolute;
+	top: 400px;
+	left: 650px;
+}
+
+.animationZone .index-10{
+	position: absolute;
+	top: 700px;
+	left: 680px;
+}
+
+.animationZone .index-11{
+	position: absolute;
+	bottom: 100px;
+	right: 300px;
+}
+
+.animationZone .index-12{
+	position: absolute;
+	top: 800px;
+	left: 1200px;
+}
+
+.animationZone .index-13{
+	position: absolute;
+	top: 685px;
+	left: 1100px;
+}
+
+.animationZone .index-14{
+	position: absolute;
+	top: 800px;
+	left: 890px;
+}
+
+.animationZone .index-15{
+	position: absolute;
+	top: 750px;
+	left: 1250px;
+}
+
+/******** animation cloud ***************/
+
+.animationZone .anim1{
+	animation-name: cloudMoveHome1;
+	animation-duration: 35s;
+	animation-delay: 1s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes cloudMoveHome1{
+	50%{transform: translateX(-600px);}
+	100%{transform: translateX(1500);}
+}
+
+.animationZone .anim2{
+	animation-name: cloudMoveHome2;
+	animation-duration: 30s;
+	animation-delay: 2s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes cloudMoveHome2{
+	50%{transform: translateX(1000px);}
+	100%{transform: translateX(-200);}
+}
+
+/*********** ANIMATIONS PLANES *********************/
+
+.oldplane{
+	position: absolute;
+	top: 50%;
+	left:48%;
+	width: 150px;
+}
+
+.hotAirBalloon{
+	position: absolute;
+	top: 70%;
+	left: 10%;
+	width: 130px;
+}
+
+.airship{
+	position: absolute;
+	top: 75%;
+	right: 5%;
+	width: 130px;
+}
+
+.helicopter1{
+	position: absolute;
+	top: 62%;
+	left: 25%;
+	width: 130px;
+}
+
+.helicopter2{
+	position: absolute;
+	top: 59%;
+	right: 15%;
+	width: 130px;
+}
+
+.helicopter3{
+	position: absolute;
+	top: 40%;
+	left: 65%;
+	width: 150px;
+}
+
+
+.plane1{
+	position: absolute;
+	top: 43%;
+	left: 25%;
+	width: 150px;
+}
+
+.plane2{
+	position: absolute;
+	top: 33%;
+	right: 45%;
+	width: 160px;
+}
+
+.plane3{
+	position: absolute;
+	top: 15%;
+	right: 10%;
+	width: 230px;
+}
+
+.planeTrump{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	width: 260px;
+}
+
+.rocket{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 180px;
+}
+
+.saucer{
+	position: absolute;
+	top: 2%;
+	left: 40%;
+	width: 110px;
+}
+
+.planeGAnimation{
+	animation-name: animPlaneV1;
+	animation-duration: 10s;
+	margin-top: -100px;
+	width: 130px;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+
+@keyframes animPlaneV1{
+	0%{transform: translateX(-80px);}
+	50%{transform: translateY(30px);}
+	80%{transform: translateY(-40px)}
+}
+
+.planeGAnimation2{
+	animation-name: animPlaneV2;
+	width: 130px;
+	animation-duration: 20s;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes animPlaneV2{
+	0%{transform: translateX(-80px);}
+	50%{transform: translateY(-40px);}
+	80%{transform: translateY(50px)}
+}
+
+
+.planeGAnimation3{
+	animation-name: animPlaneV3;
+	width: 130px;
+	animation-duration: 15s;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes animPlaneV3{
+	0%{transform: translateX(-80px);}
+	50%{transform: translateY(50px);}
+	80%{transform: translateY(-40px)}
+}
+
+/****** ZONE GAME RIGHT*******************/
+
+zoneRight{
+	position: relative;
+}
+
+.buy h1{
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.listToBuy{
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	width:100%; 
+	transform: translateX(-50%);
+	color: crimson;
+	z-index: 3;
+}
+
+.buyPlanes li {
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+	cursor: pointer;
+
+}
+
+/*********** ONGLETS ****************/
+
+.containTitle{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 20px;
+	text-align: center;	
+}
+
+.containTitle nav li{
+	display: inline-block;
+	width: 32%;
+	height: 30px;
+	padding-top: 7px;
+}
+
+.containTitle nav li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	
+}
+
+/********* général a tout les onglets ***********/
+
+.subMenu{
+	font-size: 15px;
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+.subMenu li{
+	margin-top: 10px;
+	
+}
+
+.subMenu li a {
+	text-decoration: none;
+	
+}
+
+.subMenu li {
+	padding: 5px;
+	cursor: pointer;
+}
+
+.subMenu li:hover {
+	background-color: #818181;
+}
+
+
+.planes_quantity {
+	position: absolute;
+	right: 27px;
+    margin-top: 3px;
+}
+
+/************ ONGLET VERT **********/
+
+.licolor1{
+	background-color: #cddc39;
+	position: relative;
+}
+
+.price1{
+	color:#cddc39;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.containPart1{
+	display: none;
+	position: absolute;
+	top:30px;
+	left: 0px;
+		width: 100%;
+	padding: 5px 20px;
+	background-color: #303030;
+	border-top: solid 4px #cddc39;
+}
+
+/***** ONGLET JAUNE ****/
+.price2{
+	color:#ffc107;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.containPart2{
+	display: none;
+	position: absolute;
+	top:30px;
+	left: 0px;
+	padding: 20px;
+	
+	width: 100%;
+	background-color: #303030;
+	border-top: solid 4px #ffc107;
+
+}
+
+.licolor2{
+	background-color: #ffc107;
+}
+
+
+
+
+/***** ONGLET ROUGE ****/
+
+.price3{
+	color:#f44336;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+
+.containPart3{
+	display: none;
+	position: absolute;
+	top:30px;
+	left: 0px;
+		width: 100%;
+	padding: 20px;
+	background-color: #303030;
+	border-top: solid 4px #f44336;
+}	
+
+.licolor3{
+	background-color:#f44336;
+}
+
+
+
+
+.active{
+	display: block;
+}
+
+
+
+
+/************** STAT ONGLET ****/
+
+
+.infoOnglet{
+	text-align:center;
+	margin-bottom: 10px;
+}
+
+.infoOnglet h2{
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.listInfoCompany{
+	text-align: left;
+	margin: 5px;
+}
+
+.textInfo{
+	display: inline-block;
+	color: white;
+	width: 65%;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.styleNumber1{
+	display: inline-block;
+	width: 30%;
+	color: #818181;
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+
+.networks {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	text-align:center;
+	background-color: #818181;
+}
+
+
+.networks img{
+	width: 30px;
+	margin: 10px;
+}
+
+
+.facebook{
+	display: inline-block;
+}
+
+
+
+/************* POP UP INFO GAME *******************/
+
+
+.popUp{
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	
+	top: 10%;
+	left: 50%;
+/*	transform: translateY(-50%);*/
+	transform: translateX(-50%);
+	
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: justify;
+	z-index: 5;
+	
+	
+}
+
+.popUp h1{
+	font-size: 20px;
+	color: #ffc107;
+	margin: 40px;
+}
+
+.popUp p{
+	font-size: 15px;
+	color: white;
+	margin: 0px 40px;
+	line-height: 120%;
+}
+
+.activePop{
+	display: none;
+}
+
+
+.popUp p{
+	font-weight: lighter;
+	margin-bottom: 20px;
+	font-size:14px; 
+}
+
+.popUp .introRules{
+	font-size: 14px;
+}
+
+
+
+/**********logoBrand***********/
+
+.logoBrand{
+	position: absolute;
+	bottom:-10px;
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+
+.logoBrand img{
+	width: 250px;
+}
+
+
+
+.ticketAnim{
+     zoom: 100%;
+     /*animation: bounce 0.35s ease infinite ;*/
+}
+
+.tick{
+	zoom: 99%;
+	/*animation: bounce 0s;*/
+}
+/*********** plane - img ***************/
+
+.plane-img {
+	opacity: 0;
+	transition: 3.5s;
+}
+
+
+
+

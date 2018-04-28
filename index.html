@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>AIR CLICKER</title>
+		<link rel="stylesheet" href="src/css/reset.css">
+
+
+		<link rel="apple-touch-icon" sizes="180x180" href="src/img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="src/img/favicons//favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="src/img/favicons//favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="src/img/favicons//manifest.json">
+		<link rel="mask-icon" href="src/img/favicons//safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" href="src/css/styleGame.css">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	</head>
+	<body>
+
+
+		<!-- Zone game : left -->
+		<div class="zoneGame">
+			<div class="counter">
+				<div class="title-argent">Money </div>
+				<div class="money">2000£</div>
+				<div class="title-valuation">Valuation </div>
+				<div class="valuation">9000£</div>
+			</div>
+			<canvas style="position: absolute;left: 0;top: 0;"></canvas>
+			<div class="ticket ticketAnim">
+				<img src="src/img/ticket.png" alt="boarding pass" > 
+			</div>
+			<!-- Animation zone -->
+			<div class="animationZone">
+				<!-- Plane image integration -->
+				<img src="./src/img/1.png"	alt="old plane" 			 	class="plane-img oldplane planeGAnimation">
+				<img src="./src/img/2.png"	alt="hot air balloon engine"  	class="plane-img hotAirBalloon planeGAnimation2 ">
+				<img src="./src/img/3.png"	alt="air ship engine" 		 	class="plane-img airship planeGAnimation3 ">
+				<img src="./src/img/4.png" alt="helicopter engine" 			class="plane-img helicopter1 planeGAnimation3 ">
+				<img src="./src/img/5.png" alt="helicopter engine" 			class="plane-img helicopter2 planeGAnimation2">
+				<img src="./src/img/6.png" alt="helicopter engine" 			class="plane-img helicopter3 planeGAnimation2 ">
+				<img src="./src/img/7.png"	alt="plane line 1" 				class="plane-img plane1 planeGAnimation2 ">
+				<img src="./src/img/8.png" alt="plane line 2" 				class="plane-img plane2 planeGAnimation ">
+				<img src="./src/img/9.png" alt="plane line 3" 				class="plane-img plane3 planeGAnimation3 ">
+				<img src="./src/img/10.png" alt="plane line trump" 			class="plane-img planeTrump planeGAnimation ">
+				<img src="./src/img/11.png"	alt="plane rocket" 				class="plane-img rocket planeGAnimation3 ">
+<!-- 				<img src="./src/img/planeA240.png" alt="saucer plane" 		class="plane-img saucer planeGAnimation2">
+ -->			</div>
+			<!-- button home and information -->
+			<div class="buttonBack">
+				<a href="index.html" alt="button back home"><img src="src/img/home.png" alt="home logotype"></a>
+				<a href="#" alt="button help" class="clickAction"><img src="src/img/interrogation.png" alt="interrogation logotype"></a>
+			</div>
+			<div class="popUp activePop">
+				<h1>RULES OF THE GAME</h1>
+				<p class="introRules">
+					Finally, you did it ! You created your own airline. Now, you, CEO of Air Clicker, have to carry your company in order to get it from zero to international market leader ! So buy new planes for increasing your tickets prices, hire the greatest salesmans who will sale tickets for you, and sign juicy contracts with big sponsors in order to gain easy money. Go on, it’s up to you, and become the greatest airline in the world !
+				</p>
+
+				<p> 
+					Primary goal : Sell as much tickets as you can in order to buy better and better upgrades and reach the top of the airlines market.
+					The most important : when you click, you sell a ticket and earn money. Simple.
+				</p>
+
+				<p>
+
+					1. Money counter - Let you know how much money you have
+				</br>
+			2. Valuation counter - Total of the money you got and money you spent 
+			</br>
+		3. Boarding pass - Click it to sell tickets ! At the beginning, 1 ticket = 1£
+		</br>
+	4. Home - Get you back to the arrival screen
+	</br>
+5. Help - Get you to the user manual
+</br>
+6. Upgrades screen - Here you can buy planes, sponsors, and salesman.
+</br>
+7. Planes counter - Show you how much planes of each sorts you have
+</br>
+8. Social networks - you can share your progress in the game !
+</p>
+
+<p>
+
+	Plane - More planes will increase your capacity carry passengers, so to sell tickets and increase your clicking power
+</br>
+Salesman - Hire salesman in your company : they will go and sell tons of tickets without you knowing it ! (auto-click : generate money automatically )
+
+</br>
+Sponsors - Sponsors are ready to pay well in order to stick theirs logo on your planes :with this, you selling capacity will increase a lot for a short period. (Temporary power-ups who boost your clicking power)
+</p>
+
+
+</div>
+</div>
+
+<!-- Right zone -->
+<div class="zoneRight">
+	<div class="buy">
+		<h1>TO BUY </h1>
+		<div class="imageAlign">
+			<div class="left">
+				<div class="listToBuy"> 
+
+					<!-- Title part  -->
+					<div class="containTitle">
+						<nav class="menu">
+							<li class="tab licolor1" data-index="0"><a href="#" class="firstList">Planes</a></li>
+							<li class="tab licolor2" data-index="1"><a href="#" class="firstList">Sponsors</a></li>
+							<li class="tab licolor3" data-index="2"><a href="#" class="firstList">Click</a></li>
+						</nav>
+					</div>
+					<!-- Content part green-->
+					<div class="tab-content containPart1 active">
+						<nav class="subMenu">
+							<ul class="buyPlanes">
+								<!-- Affiche -s stats avions -->
+							</ul>
+						</nav>
+						<div class="infoOnglet">
+							<h2 class="name_item">YOUR PLANES</h2> 
+							<div class="listInfoCompany">
+								<div class="styleNumber1 elementNumberSponsors value_item">2</div>
+								<div class="textInfo elementInfo">Boost click </div>
+
+
+							</div> 
+						</div>	
+					</div>
+
+					<!-- Content part yellow -->
+					<div class="tab-content containPart2">
+						<nav class="subMenu">
+							<ul class="buySponsors">
+								<!-- <li><a href="#"><span class="price2"> 1000 £ </span> - MacDonald's</a></li>
+								<li><a href="#"><span class="price2"> 20 000 £ </span> - Volskaya Industries</a></li>
+								<li><a href="#"><span class="price2"> 30 000 £ </span> - Hermès</a></li>
+								<li><a href="#"><span class="price2"> 40 000 £ </span> - Cartier</a></li>
+								<li><a href="#"><span class="price2"> 60 000 £ </span> - Bourienne Consulting</a></li> -->
+							</ul>
+						</nav>
+						<div class="infoOnglet">
+							<h2 class="name_item">YOUR SPONSORS </h2> 
+							<div class="listInfoCompany">
+								<div class="styleNumber1 value_item">10s</div>
+								<div class="textInfo elementInfo">£/click</div>
+
+								<div class="styleNumber1 elementNumberSponsors">10</div>
+								<div class="textInfo elementInfo">Time sponsor</div>
+							</div> 
+						</div>
+					</div>
+
+					<!-- Content part red -->
+					<div class="tab-content containPart3">
+						<nav class="subMenu">
+							<ul class="buyClick">
+<!-- 								<li><a href="#"><span class="price3"> 50 £</span> - Your little sister</a></li>
+								<li><a href="#"><span class="price3"> 225 £ </span> - Your best friend </a></li>
+								<li><a href="#"><span class="price3"> 1700 £</span> - Your ex</a></li>
+								<li><a href="#"><span class="price3"> 15 000 £ </span> - Your boss</a></li>
+								<li><a href="#"><span class="price3"> 150 000 £ </span> - Your super boss</a></li>
+								<li><a href="#"><span class="price3"> 2 000 000 £ </span> - Un inconnu</a></li>
+								<li><a href="#"><span class="price3"> 30 000 000 £ </span> - Barack Obama</a></li>
+								<li><a href="#"><span class="price3"> 400 000 000 £ </span> - Mark Zuckerberg</a></li>
+								<li><a href="#"><span class="price3"> 7M  £</span> - Alan Turing</a></li>
+								<li><a href="#"><span class="price3"> 80M  £ </span> - Steve Jobs</a></li>
+								<li><a href="#"><span class="price3"> 1 000 M  £ </span> - Bruno Simon</a></li>
+ -->							</ul>
+						</nav>
+						<div class="infoOnglet">
+							<h2 class="name_item">YOUR CLICKERS </h2> 
+							<div class="listInfoCompany">
+								<div class="styleNumber1 value_item">3</div>
+								<div class="textInfo elementInfo">Additionnal clicks per minutes </div>
+
+								<div class="styleNumber1 elementNumberSponsors">∞</div>
+								<div class="textInfo elementInfo">Duration </div>
+							</div> 
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="logoBrand">
+				<img src="src/img/logoBrand.png" alt="logoBrand">
+			</div>
+			<!-- Network button-->
+			<div class="networks">
+			<div class="facebook" data-href="http://airclicker.esy.es/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fairclicker.esy.es%2F&amp;src=sdkpreparse"> <img src="src/img/facebookLogo.png" alt="#"></a>
+			</div>
+				
+				<img class="tweet" src="src/img/twitterLogo.png" alt="#">
+				<img src="src/img/instaLogo.png" alt="#">
+			</div>
+		</div>
+		
+		
+		<div class="" data-href="http://airclicker.esy.es/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fairclicker.esy.es%2F&amp;src=sdkpreparse"></a></div>
+
+
+
+
+		<script src="src/js/script.js"></script>
+		</body>
+	</html>
