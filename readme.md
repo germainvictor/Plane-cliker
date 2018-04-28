@@ -4,6 +4,7 @@
 
 The Avion Clicker is a game created during the intensive week in Hetic School.
 The objectives is to increase your airline Companie and buy many things to became rich.
+*Demo* : https://git.io/vp4zx
 
 **OBJECTIVES**
 - Create a clicker game in the aviation domain
